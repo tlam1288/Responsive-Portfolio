@@ -1,5 +1,6 @@
 h2 {
   font-weight: bold;
+  font-family: "Ramabhadra", sans-serif;
 }
 footer {
   font-size: small;
@@ -16,4 +17,8 @@ label {
 
 .picture {
   box-shadow: 10px 15px 8px #888888;
+}
+
+#navbar {
+  background-color: #105153;
 }

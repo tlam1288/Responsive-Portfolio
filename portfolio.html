@@ -9,13 +9,14 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Timothy Lam: Portfolio page</title>
   </head>
   <body>
     <header>
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      
+      <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
         <a class="navbar-brand" href="index.html">Timothy Lam</a>
         <button
           class="navbar-toggler"
@@ -36,7 +37,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Porfolio</a>
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -44,57 +45,55 @@
           </ul>
         </div>
       </nav>
-      <!-- end navbar -->
+      
     </header>
     <main>
       <div class="container">
         <h2>My Portfolio</h2>
         <div class="row">
-          <div class="col-sm mt-5">
-            <img
-              src="assets/images/placeholder200x200.png"
-              class="img-fluid picture"
-              alt="Responsive image"
-            />
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4 ">
+              <div class="card border border-dark">
+                <img src="assets/images/day/day1.png" class="card-img-top" alt="Screenshot of scheduling application">
+                <div class="card-body">
+                  <h5 class="card-title">Work Day Scheduler</h5>
+                  <p class="card-text">This day scheduler allows the user to add events to their work day. The current date is displayed at the top and the schedule below is color coded based on if the time has past, is the current time, or has yet to occur. The user can add events and save it so that it appears the next time they visit the site.</p>
+                  <a href="https://tlam1288.github.io/Work-Day-Scheduler/">See it on GitHub!</a>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card border border-dark">
+                <img src="assets/images/pw/pwgenerator1.png" class="card-img-top" alt="Screenshot of a password generator application">
+                <div class="card-body">
+                  <h5 class="card-title">Password Generator</h5>
+                  <p class="card-text">A random password will be generated based off criteria chosen by the user. The parameters include having lower and uppercase letters, numbers, special characters, and how long they want their password to be. </p>
+                  <a href="https://tlam1288.github.io/Password-Generator/">See it on GitHub!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card border border-dark">
+                <img src="assets/images/quiz/quiz2.png" class="card-img-top" alt="Starting page of a Javascripy quiz game">
+                <div class="card-body">
+                  <h5 class="card-title">Quiz game</h5>
+                  <p class="card-text">This quiz game features multiple choice questions that challenges the user. Upon hitting the start button a timer will begin counting down from 30 seconds and the questions will begin. If they select the correct answer they will gain one point. If they answer incorrectly they will lose a point and 5 seconds will be deducted from the clock. After the series of questions are completed or time runs out, whichever occurs first, their final score will be shown. An input box will show up for the user to log their initials. Their initials and score will be kept and shown for reference when they play again.</p>
+                  <a href="https://tlam1288.github.io/Code-Quiz/">See it on GitHub!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card border border-dark">
+                <img src="assets/images/weather/weather1.png" class="card-img-top" alt="Screenshot of a weather forecast application displaying current and future forecast">
+                <div class="card-body">
+                  <h5 class="card-title">Weather Dashboard</h5>
+                  <p class="card-text">The weather dashboard allows the user to search the current weather of any city as well as a 5 day forecast. The data is retrieved by using an API from openweathermap.org. </p>
+                  <a href="https://tlam1288.github.io/Weather-dashboard/">See it on GitHub!</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-sm mt-5">
-            <img
-              src="assets/images/placeholder200x200.png"
-              class="img-fluid picture"
-              alt="Responsive image"
-            />
-          </div>
-          <div class="col-sm mt-5">
-            <img
-              src="assets/images/placeholder200x200.png"
-              class="img-fluid picture"
-              alt="Responsive image"
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm mt-5">
-            <img
-              src="assets/images/placeholder200x200.png"
-              class="img-fluid picture"
-              alt="Responsive image"
-            />
-          </div>
-          <div class="col-sm mt-5">
-            <img
-              src="assets/images/placeholder200x200.png"
-              class="img-fluid picture"
-              alt="Responsive image"
-            />
-          </div>
-          <div class="col-sm mt-5">
-            <img
-              src="assets/images/placeholder200x200.png"
-              class="img-fluid picture"
-              alt="Responsive image"
-            />
-          </div>
-        </div>
       </div>
     </main>
     <script
